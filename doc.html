@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main">
+        <nav >
+            <div class="logo">
+                <img src="https://cdn-icons-png.flaticon.com/256/7005/7005238.png" alt="logo">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">categorie</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="information">
+            <div  id="circle">
+                
+                
+                <div class="feature one">
+                    <img src="https://cdn-icons-png.flaticon.com/256/868/868786.png" alt="">
+                    <div>
+                        <h2>hebergement</h2>
+                        <p>server privé,en collaboration</p>
+                    </div>
+                </div>
+                
+
+                <div class="feature three">
+                    <img src="https://cdn-icons-png.flaticon.com/256/1465/1465569.png" alt="">
+                    <div id="sas1">
+                        <h2>programmation</h2>
+                        <p>c++,javascript,html</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="https://cdn-icons-png.flaticon.com/256/10061/10061871.png" alt="">
+                    <div id="sas">
+                        <h2>maintenance</h2>
+                        <p>resoudre les problem de votre site</p>
+                    </div>
+                
+                </div>
+                
+            </div>
+
+        </div>
+        <div class="controls">
+            <img src="https://cdn-icons-png.flaticon.com/256/10569/10569895.png" id="upbtn">
+            <h3>feature</h3>
+            <img src="https://cdn-icons-png.flaticon.com/256/10569/10569895.png" alt="downbtn">
+
+        </div>
+    </div>
+    <script>
+        var circle=document.getElementById("circle");
+        var upbtn=document.getElementById("upbtn");
+        var downbtn=document.getElementById("downbtn");
+        var rotateValue= circle.style.transform;
+        var rotatesum;
+        upbtn.onclick= function(){
+            rotatesum= rotateValue+"rotate(-90 deg)";
+            circle.style.transform= rotatesum;
+            rotateValue=rotatesum;
+        }
+    </script>
+</body>
+</html>
